@@ -1,0 +1,82 @@
+{
+  "package": {
+    "name": "@deep-foundation/openai",
+    "version": "1.0.2"
+  },
+  "data": [
+    {
+      "package": {
+        "dependencyId": 0,
+        "containValue": "Type"
+      },
+      "id": 1
+    },
+    {
+      "package": {
+        "dependencyId": 0,
+        "containValue": "Value"
+      },
+      "id": 2
+    },
+    {
+      "package": {
+        "dependencyId": 0,
+        "containValue": "String"
+      },
+      "id": 3
+    },
+    {
+      "package": {
+        "dependencyId": 0,
+        "containValue": "Any"
+      },
+      "id": 4
+    },
+    {
+      "package": {
+        "dependencyId": 0,
+        "containValue": "User"
+      },
+      "id": 5
+    },
+    {
+      "id": "ApiKey",
+      "type": 1
+    },
+    {
+      "id": "Model",
+      "type": 1
+    },
+    {
+      "id": "ModelValue",
+      "type": 2,
+      "from": "Model",
+      "to": 3
+    },
+    {
+      "id": "UsesModel",
+      "type": 1,
+      "from": 4,
+      "to": "Model"
+    },
+    {
+      "id": "ApiKeyValue",
+      "type": 2,
+      "from": "ApiKey",
+      "to": 3
+    },
+    {
+      "id": "UsesApiKey",
+      "type": 1,
+      "from": 5,
+      "to": "ApiKey"
+    }
+  ],
+  "errors": [],
+  "dependencies": [
+    {
+      "name": "@deep-foundation/core",
+      "version": "0.0.2"
+    }
+  ]
+}
